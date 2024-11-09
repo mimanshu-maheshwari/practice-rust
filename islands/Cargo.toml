@@ -1,0 +1,7 @@
+[package]
+name = "islands"
+version = "0.1.0"
+edition = "2021"
+authors = ["Mimanshu Maheshwari <maheshwari.mimanshu@gmail.com>"]
+
+[dependencies]
