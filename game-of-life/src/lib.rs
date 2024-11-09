@@ -15,6 +15,7 @@
 pub fn play_game(grid: &mut Vec<Vec<u8>>, iterations: usize) {
     let rows = grid.len();
     let cols = grid[0].len();
+
     for _ in 0..iterations {
         for row in 0..rows {
             for col in 0..cols {
@@ -24,12 +25,14 @@ pub fn play_game(grid: &mut Vec<Vec<u8>>, iterations: usize) {
                 }
             }
         }
+
         for row in 0..rows {
             for col in 0..cols {
                 grid[row][col] /= 2;
             }
         }
     }
+
 }
 
 /// will return valid rows and columns to the given cell as iterator on `(row: usize, col: usize)`
