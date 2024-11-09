@@ -3,5 +3,9 @@
 version = 3
 
 [[package]]
+name = "game-of-life"
+version = "0.1.0"
+
+[[package]]
 name = "islands"
 version = "0.1.0"
