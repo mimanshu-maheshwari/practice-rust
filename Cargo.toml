@@ -1,5 +1,5 @@
 [workspace]
-members =["islands", "game-of-life"]
+members =["islands", "game-of-life", "number-of-islands-two"]
 resolver ="2"
-default-members = [ "game-of-life"]
+default-members = [ "number-of-islands-two" ]
 
