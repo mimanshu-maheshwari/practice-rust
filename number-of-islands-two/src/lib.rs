@@ -146,4 +146,44 @@ mod tests {
         // assert
         assert_eq!(expected_output, actual_output);
     }
+
+    #[test]
+    fn test_3() {
+
+        // Input: n = 3, m = 3, A = [[0,0],[0,1],[1,2],[2,1]]
+        // Output: [1,1,2,3]
+
+        // setup
+        let (n, m) = (3, 3);
+        let a = vec![vec![0,0],vec![0,1],vec![1,2],vec![2,1]];
+        let operators = a.into_iter().map(|val| Point::new(val[0], val[1])).collect();
+        let expected_output = vec![1,1,2,3];
+
+        // solve
+        let actual_output = Solver::num_islands2(n, m, operators);
+
+        // assert
+        assert_eq!(expected_output, actual_output);
+    }
+
+    #[test]
+    fn test_4() {
+
+        // Input: m = 1, n = 1, positions = [[0,0]]
+        // Output: [1]
+
+        // setup
+        let (n, m) = (1, 1);
+        let a = vec![vec![0,0]];
+        let operators = a.into_iter().map(|val| Point::new(val[0], val[1])).collect();
+        let expected_output = vec![1];
+
+        // solve
+        let actual_output = Solver::num_islands2(n, m, operators);
+
+        // assert
+        assert_eq!(expected_output, actual_output);
+    }
+
+
 }
